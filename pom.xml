@@ -13,6 +13,7 @@
     <module>cloud-provider1</module>
     <module>cloud-provider2</module>
     <module>cloud-consumer1</module>
+    <module>cloud-provider3-primihub</module>
   </modules>
 
   <properties>

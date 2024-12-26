@@ -1,0 +1,12 @@
+server:
+  port: 8084
+
+eureka:
+  client:
+    register-with-eureka: true #是否将自己注册到Eureka Server
+    fetch-registry: true #是否从Eureka Server获取注册信息 #Eureka Server地址
+    service-url: #Eureka Server地址
+      defaultZone: http://127.0.0.1:8848/eureka/
+spring:
+  application:
+    name: cloud-provider3-primihub
