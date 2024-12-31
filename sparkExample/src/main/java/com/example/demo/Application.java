@@ -20,5 +20,8 @@ public class Application implements CommandLineRunner {
     public void run(String... args) throws Exception {
         // 在应用启动时，可以选择执行某些 Spark 作业，或者不做任何事情，等待外部请求。
         System.out.println("Spring Boot application with Spark started.");
+
+
+
     }
 }
