@@ -24,7 +24,7 @@ class DemoApplicationTests {
             // 发起一个PIR任务
             TaskParam<TaskPIRParam> taskParam = new TaskParam<>(new TaskPIRParam());
             // 设置taskID
-            taskParam.setTaskId(UUID.randomUUID().toString().replace("-",""));
+            taskParam.setTaskId(UUID.randomUUID().toString().replace("-", ""));
             // 设置PIR参数
             taskParam.getTaskContentParam().setServerData("keyword_pir_server_data");
             taskParam.getTaskContentParam().setQueryParam(
@@ -37,7 +37,7 @@ class DemoApplicationTests {
             taskParam.getTaskContentParam().setOutputFullFilename("./data/result/pir_sdk_result.csv");
             // 提交任务 - 阻塞持续获取任务状态
             taskHelper.submit(taskParam);
-        }catch (Exception e){
+        } catch (Exception e) {
             System.out.println("错误信息:");
             e.printStackTrace();
         }

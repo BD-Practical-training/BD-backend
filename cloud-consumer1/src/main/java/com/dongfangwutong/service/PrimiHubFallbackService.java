@@ -10,6 +10,9 @@ public class PrimiHubFallbackService implements PrimiHubService {
 
     @Override
     public TaskParam<?> pirTask(String[] params) {
-        return new TaskParam<TaskPIRParam>(){{this.setSuccess(false);this.setError("服务熔断");}};
+        return new TaskParam<TaskPIRParam>() {{
+            this.setSuccess(false);
+            this.setError("服务熔断");
+        }};
     }
 }

@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Service
-@FeignClient(value = "cloud-provider3-primihub",path = "/PrimiHubController",fallback = PrimiHubFallbackService.class)
+@FeignClient(value = "cloud-provider3-primihub", path = "/PrimiHubController", fallback = PrimiHubFallbackService.class)
 public interface PrimiHubService {
 
     @GetMapping("/pirTask")

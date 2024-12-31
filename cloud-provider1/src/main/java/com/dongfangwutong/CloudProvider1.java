@@ -6,10 +6,8 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-public class CloudProvider1
-{
-    public static void main( String[] args )
-    {
+public class CloudProvider1 {
+    public static void main(String[] args) {
         SpringApplication.run(CloudProvider1.class, args);
     }
 }

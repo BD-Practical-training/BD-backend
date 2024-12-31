@@ -28,8 +28,8 @@ public class ConsumerController {
     }
 
     @PostMapping("/feignPirTask")
-    public TaskParam<?> pirTask(@RequestBody List<String>params) {
-        System.out.println("receive params:"+ params);
+    public TaskParam<?> pirTask(@RequestBody List<String> params) {
+        System.out.println("receive params:" + params);
         return primiHubService.pirTask(params.toArray(new String[0]));
     }
 }
