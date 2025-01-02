@@ -14,7 +14,7 @@
     <module>cloud-provider2</module>
     <module>cloud-consumer1</module>
     <module>cloud-provider3-primihub</module>
-    <module>sparkExample</module>
+    <module>cloud-provider4-Spark</module>
   </modules>
 
   <properties>
