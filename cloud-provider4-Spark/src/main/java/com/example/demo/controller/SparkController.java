@@ -7,7 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/spark")
+@RequestMapping("/SparkController")
+
 public class SparkController {
 
     @Autowired
@@ -18,7 +19,7 @@ public class SparkController {
     public String processTextFile() {
         try {
             sparkService.processTextFile();
-            return "Text file processed successfully!";
+            return "Text file processed successfully   !";
         } catch (Exception e) {
             return "Error processing text file: " + e.getMessage();
         }

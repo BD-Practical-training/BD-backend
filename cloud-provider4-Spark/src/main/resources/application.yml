@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: sparkExample
+
+server:
+  port: 8085
+
+eureka:
+  client:
+    register-with-eureka: true #\u662F\u5426\u5C06\u81EA\u5DF1\u6CE8\u518C\u5230Eureka Server
+    fetch-registry: true #\u662F\u5426\u4ECEEureka Server\u83B7\u53D6\u6CE8\u518C\u4FE1\u606F #Eureka Server\u5730\u5740
+    service-url: #Eureka Server\u5730\u5740
+      defaultZone: http://127.0.0.1:8848/eureka/

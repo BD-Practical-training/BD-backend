@@ -2,6 +2,7 @@ package com.dongfangwutong.controller;
 
 import com.dongfangwutong.service.Provider1Service;
 import com.dongfangwutong.service.PrimiHubService;
+import com.dongfangwutong.service.SparkExampleService;
 import com.primihub.sdk.task.param.TaskParam;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,6 +15,10 @@ public class ConsumerController {
 
     @Resource
     Provider1Service provider1Service;
+
+    @Resource
+    SparkExampleService sparkExampleService;
+
     @Resource
     PrimiHubService primiHubService;
 
@@ -31,5 +36,10 @@ public class ConsumerController {
     public TaskParam<?> pirTask(@RequestBody List<String> params) {
         System.out.println("receive params:" + params);
         return primiHubService.pirTask(params.toArray(new String[0]));
+    }
+
+    @GetMapping("/spark/test")
+    public String processTextFile() {
+        return sparkExampleService.processTextFile();
     }
 }
